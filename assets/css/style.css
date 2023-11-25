@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Barbershop";
+  src: url("../font/Barbershop\ in\ Thailand.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #595959;
+  background-image: url(/assets/img/fundo.jpg);
+  background-size: contain;
+  background-position: center top;
+}
+
+/* Header */
+
+header {
+  background-color: #f2f2f2bf;
+  display: flex;
+  flex-direction: column;
+}
+
+header #logo {
+  padding-top: 0.5rem;
+  display: flex;
+}
+
+header #logo > img {
+  width: 5rem;
+  opacity: .7;
+}
+
+header #logo-centro {
+  width: 8.5rem;
+  margin: auto;
+  padding-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header #logo-centro > img {
+  width: 100%;
+}
+
+header #logo-centro > span {
+  text-align: center;
+  font-family: "Barbershop", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+header > nav {
+  padding: 1.5rem 0;
+}
+
+header > nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header > nav > ul > li > a {
+  text-decoration: none;
+  padding: 0.3rem;
+  font-size: 1.25em;
+  color: black;
+  font-weight: bold;
+}
+
+header > nav > ul > li > a:hover {
+  background-color: #595959;
+  border-radius: 10px;
+  color: rgba(255, 255, 0, 0.715);
+  box-shadow: 2px 2px 0px rgba(255, 255, 0, 0.198);
+}
+
+/* Banner */
+
+#banner > img {
+  width: 100%;
+}
+
+/* Main */
+
+main > section#servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main > section#servicos > h1 {
+  text-align: center;
+  padding: 10px 0 5px 0;
+  color: yellow;
+}
+
+main > section#servicos > article {
+  background-color: #8c8c8c32;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto 2rem;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+
+main > section#servicos > article > figure,
+main > section#servicos > article > .valores {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+  color: rgba(255, 255, 0, 0.844);
+  padding: 3px 0;
+}
+
+main > section#servicos > article > figure > p {
+  font-size: x-small;
+  margin-top: -3.7px;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: rgba(255, 255, 0, 0.394);
+}
+
+main > section#servicos > article > figure > p > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main > section#servicos > article > figure > img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
