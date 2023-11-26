@@ -294,6 +294,24 @@ main > section#localizacao > #mapa > iframe {
   height: 40vh;
 }
 
+/* section pagamento */
+main > section#pagamento {
+  background-color: #fff;
+}
+
+main > section#pagamento > h2 {
+  color: #000;
+}
+
+main > section#pagamento > div#cartoes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main > section#pagamento > div#cartoes > img {
+  width: 36px;
+}
+
 /* footer */
 footer {
   background-color: rgba(0, 0, 0, 0.811);
