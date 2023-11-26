@@ -16,7 +16,7 @@ body {
   background-position: center top;
 }
 
-/* Header */
+/* header */
 
 header {
   background-color: #f2f2f2bf;
@@ -31,7 +31,7 @@ header #logo {
 
 header #logo > img {
   width: 5rem;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 header #logo-centro {
@@ -78,24 +78,28 @@ header > nav > ul > li > a:hover {
   box-shadow: 2px 2px 0px rgba(255, 255, 0, 0.198);
 }
 
-/* Banner */
+/* banner */
 
 #banner > img {
   width: 100%;
 }
 
-/* Main */
+/* main */
+main h2, main h1 {
+  text-align: center;
+  padding: 10px 0;
+  color: yellow;
+}
 
+main > section {
+  margin-bottom: 20px;
+}
+
+/* section servicos */
 main > section#servicos {
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-main > section#servicos > h1 {
-  text-align: center;
-  padding: 10px 0 5px 0;
-  color: yellow;
 }
 
 main > section#servicos > article {
@@ -134,4 +138,91 @@ main > section#servicos > article > figure > p > a {
 main > section#servicos > article > figure > img {
   width: 100%;
   border-radius: 10px 10px 0 0;
+}
+
+main > section#servicos > article:hover {
+  background-color: #8c8c8cb5;
+}
+
+/* section promocoes*/
+main > section#promocoes {
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+main > section#promocoes > h2 {
+  color: #000;
+}
+
+main > section#promocoes > table {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+main > section#promocoes > table td,
+main > section#promocoes > table th {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  /* background-color: #40404066; */
+  background-color: #8c8c8c80;
+}
+
+/* section atendimento */
+main > section#atendimento > table {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+main > section#atendimento > table td,
+main > section#atendimento > table th {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  /* background-color: #40404066; */
+  background-color: #2727278c;
+  color: yellow;
+}
+
+main > section#atendimento > table > tbody > tr:hover {
+  background-color: #272727c0;
+}
+
+/* section localizacao */
+main > section#localizacao {
+  background-color: #fff;
+}
+
+main > section#localizacao > h2 {
+  color: #000;
+}
+
+main > section#localizacao > address {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main > section#localizacao > address > p{
+ padding: 5px;
+}
+
+main > section#localizacao > #mapa > iframe {
+  width: 100vw;
+  height: 40vh;
+}
+
+
+
+
+footer > #whats {
+  position:fixed;
+  bottom:10px;
+  right:10px;
+}
+
+footer > #whats > img {
+  width: 64px;
 }
