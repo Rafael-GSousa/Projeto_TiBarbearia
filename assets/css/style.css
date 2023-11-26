@@ -15,7 +15,7 @@ html {
 
 body {
   background-color: #595959;
-  background-image: url("./assets/img/fundo.jpg");
+  background-image: url("../img/fundo.jpg");
   background-size: contain;
   background-position: center top;
 }
