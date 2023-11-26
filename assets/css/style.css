@@ -1,3 +1,7 @@
+:root{
+  font-size: 16px;
+}
+
 @font-face {
   font-family: "Barbershop";
   src: url("../font/Barbershop\ in\ Thailand.ttf") format("truetype");
@@ -85,14 +89,36 @@ header > nav > ul > li > a:hover {
 }
 
 /* main */
-main h2, main h1 {
+main h2 {
   text-align: center;
   padding: 10px 0;
   color: yellow;
 }
 
 main > section {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* section quemSomos */
+main > section#quemSomos {
+  background-color: #fff;
+  padding: 15px 0;
+}
+
+main > section#quemSomos > h1 {
+  text-align: center;
+  font-family: 'Barbershop', Arial, Helvetica, sans-serif;
+  padding-top: 10px;
+}
+
+main > section#quemSomos > h2 {
+  color: #000;
+}
+
+main > section#quemSomos > p {
+  width: 90%;
+  margin: auto;
+  text-align: justify;
 }
 
 /* section servicos */
@@ -144,29 +170,38 @@ main > section#servicos > article:hover {
   background-color: #8c8c8cb5;
 }
 
-/* section promocoes*/
+/* section promocoes e produtos*/
 main > section#promocoes {
   background-color: #fff;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-main > section#promocoes > h2 {
+main > section#promocoes > div > h2 {
   color: #000;
 }
 
-main > section#promocoes > table {
+main > section#promocoes > div {
   width: 90%;
-  text-align: center;
   margin: auto;
 }
 
-main > section#promocoes > table td,
-main > section#promocoes > table th {
+main > section#promocoes > div > table {
+  text-align: center;
+  width: 100%;
+}
+
+main > section#promocoes > div > table td:hover {
+  background-color: #8c8c8caa;
+}
+
+main > section#promocoes > div > table td {
   padding: 10px;
   font-size: 1.2rem;
   border-radius: 10px;
-  /* background-color: #40404066; */
-  background-color: #8c8c8c80;
+  background-color: #8c8c8c5d;
 }
 
 /* section atendimento */
@@ -182,13 +217,58 @@ main > section#atendimento > table th {
   padding: 10px;
   font-size: 1.2rem;
   border-radius: 10px;
-  /* background-color: #40404066; */
   background-color: #2727278c;
   color: yellow;
 }
 
 main > section#atendimento > table > tbody > tr:hover {
   background-color: #272727c0;
+}
+
+/* section contato */
+main > section#contato {
+  background-color: #fff;
+}
+
+main > section#contato > h2 {
+  color: #000;
+}
+
+main > section#contato > a#zap {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  gap: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+main > section#contato > a#zap > img {
+  width: 24px;
+}
+
+main > section#contato > div#sociais {
+  width: 70%;
+  margin: 20px auto 0 auto;
+}
+
+main > section#contato > div#sociais > h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main > section#contato > div#sociais > a {
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  gap: 5px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+main > section#contato > div#sociais > a > img {
+  width: 24px;
 }
 
 /* section localizacao */
@@ -214,9 +294,60 @@ main > section#localizacao > #mapa > iframe {
   height: 40vh;
 }
 
+/* footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.811);
+  color: rgb(214, 198, 198);
+  text-align: center;
+  padding-bottom: 10px;
+} 
 
+footer #dev #autor {
+  font-style: bold;
+  font-size: 1.1rem;
+  font-family: cursive;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px rgba(108, 108, 156, 0.363);
+  color: #61618e;
+  
+}
 
+footer #dev img {
+  height: 18px;
+  margin-left: 15px;
+  border-radius: 2px;
+}
 
+footer #dev{
+  width: 100%;
+  color: #d1cfcf;
+  padding: 5px;
+  font-size: 1rem;
+  line-height: 12px;
+  vertical-align: bottom;
+}
+
+footer #dev a {
+  text-decoration: none;
+  color: #6b6464b0;
+  vertical-align: bottom;
+}
+
+footer #dev p {
+  padding: 10px;
+}
+
+footer #dev img:hover {
+  box-shadow: 2px 2px 5px rgba(246, 255, 0, 0.538);
+  transform: translate(0px, -5px);
+  transition: .2s;
+}
+
+footer > div#copy {
+  margin-top: 10px;
+}
+
+/* ícone do whatsapp fixado na página */
 footer > #whats {
   position:fixed;
   bottom:10px;
