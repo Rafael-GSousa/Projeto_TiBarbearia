@@ -1,0 +1,79 @@
+/* mobile */
+@media screen and (max-width: 480px) {
+  header #logo {
+    justify-content: space-evenly;
+  }
+
+  header #logo > img {
+    width: 4.5rem;
+    opacity: 0.7;
+  }
+
+  header #logo-centro > span {
+    font-size: 1.2rem;
+  }
+
+  header > nav > ul {
+    justify-content: space-around;
+  }
+
+  header > nav > ul > li > a {
+    font-size: 1.25rem;
+  }
+
+  main > section#promocoes > div > h2 {
+    font-size: 1.404rem;
+  }
+
+  main > section#promocoes > div > p {
+    font-size: 0.852rem;
+  }
+
+  main > section#pagamento > div#cartoes > img {
+    width: 32px;
+  }
+
+  footer #dev {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 550px) and (max-width: 768px) {
+  main > section#servicos > div#servicos-container > article,
+  main > section#promocoes > div {
+    width: 80%;
+  }
+}
+
+/* laptop para cima */
+@media screen and (min-width: 769px) {
+  main > section#quemSomos > p {
+    width: 75%;
+  }
+
+  main > section#servicos > div#servicos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  main > section#servicos > div#servicos-container > article {
+    width: 30%;
+  }
+
+  main > section#servicos > div#servicos-container > article > figure > img {
+    height: 200px;
+  }
+
+  main > section#promocoes > div,
+  main > section#atendimento > table {
+    width: 60%;
+  }
+
+  main > section#contato {
+    display: flex;
+  }
+}

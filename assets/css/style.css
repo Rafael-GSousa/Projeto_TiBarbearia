@@ -1,4 +1,4 @@
-:root{
+:root {
   font-size: 16px;
 }
 
@@ -24,13 +24,12 @@ body {
 
 header {
   background-color: #f2f2f2bf;
-  display: flex;
-  flex-direction: column;
+  padding-top: 0.5rem;
 }
 
 header #logo {
-  padding-top: 0.5rem;
   display: flex;
+  justify-content: space-around;
 }
 
 header #logo > img {
@@ -40,7 +39,6 @@ header #logo > img {
 
 header #logo-centro {
   width: 8.5rem;
-  margin: auto;
   padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -54,23 +52,24 @@ header #logo-centro > img {
 header #logo-centro > span {
   text-align: center;
   font-family: "Barbershop", Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.75rem;
 }
 
 header > nav {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 }
 
 header > nav > ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  padding: 0 0.5rem;
 }
 
 header > nav > ul > li > a {
   text-decoration: none;
   padding: 0.3rem;
-  font-size: 1.25em;
+  font-size: 1.7rem;
   color: black;
   font-weight: bold;
 }
@@ -102,13 +101,23 @@ main > section {
 /* section quemSomos */
 main > section#quemSomos {
   background-color: #fff;
-  padding: 15px 0;
+  padding-top: 15px;
 }
 
 main > section#quemSomos > h1 {
   text-align: center;
-  font-family: 'Barbershop', Arial, Helvetica, sans-serif;
-  padding-top: 10px;
+  font-family: "Barbershop", Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(147, 3, 3),
+    rgb(226, 222, 222),
+    rgb(1, 1, 159)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000;
+  margin-bottom: 10px;
 }
 
 main > section#quemSomos > h2 {
@@ -122,33 +131,30 @@ main > section#quemSomos > p {
 }
 
 /* section servicos */
-main > section#servicos {
+main > section#servicos > div#servicos-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-main > section#servicos > article {
+main > section#servicos > div#servicos-container > article {
   background-color: #8c8c8c32;
-  display: flex;
-  flex-direction: column;
   width: 90%;
   margin: 0 auto 2rem;
   padding-bottom: 5px;
   border-radius: 10px;
 }
 
-main > section#servicos > article > figure,
-main > section#servicos > article > .valores {
+main > section#servicos > div#servicos-container > article > figure,
+main > section#servicos > div#servicos-container > article .valores {
   margin: auto;
   text-align: center;
   width: 100%;
   font-weight: bolder;
   color: rgba(255, 255, 0, 0.844);
-  padding: 3px 0;
 }
 
-main > section#servicos > article > figure > p {
+main > section#servicos > div#servicos-container > article > figure > p {
   font-size: x-small;
   margin-top: -3.7px;
   margin-bottom: 20px;
@@ -156,17 +162,17 @@ main > section#servicos > article > figure > p {
   color: rgba(255, 255, 0, 0.394);
 }
 
-main > section#servicos > article > figure > p > a {
+main > section#servicos > div#servicos-container > article > figure > p > a {
   text-decoration: none;
   color: inherit;
 }
 
-main > section#servicos > article > figure > img {
+main > section#servicos > div#servicos-container > article > figure > img {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
-main > section#servicos > article:hover {
+main > section#servicos > div#servicos-container > article:hover {
   background-color: #8c8c8cb5;
 }
 
@@ -194,14 +200,14 @@ main > section#promocoes > div > table {
 }
 
 main > section#promocoes > div > table td:hover {
-  background-color: #8c8c8caa;
+  background-color: #8c8c8c87;
 }
 
 main > section#promocoes > div > table td {
   padding: 10px;
   font-size: 1.2rem;
   border-radius: 10px;
-  background-color: #8c8c8c5d;
+  background-color: #8c8c8c14;
 }
 
 /* section atendimento */
@@ -230,25 +236,34 @@ main > section#contato {
   background-color: #fff;
 }
 
-main > section#contato > h2 {
+div#agendamento {
+  margin: auto;
+}
+
+main > section#contato > div#agendamento > h2 {
   color: #000;
 }
 
-main > section#contato > a#zap {
+main > section#contato > div#agendamento > a#zap {
   display: flex;
   justify-content: center;
-  align-items:flex-end;
+  align-items: flex-end;
   gap: 5px;
   text-decoration: none;
   color: #000;
+  font-size: 1.1rem;
 }
 
-main > section#contato > a#zap > img {
-  width: 24px;
+main > section#contato > div#agendamento > a#zap:hover {
+  color: #00f;
+  cursor: pointer;
+}
+
+main > section#contato > div#agendamento > a#zap > img {
+  width: 22px;
 }
 
 main > section#contato > div#sociais {
-  width: 70%;
   margin: 20px auto 0 auto;
 }
 
@@ -260,15 +275,21 @@ main > section#contato > div#sociais > h3 {
 main > section#contato > div#sociais > a {
   display: flex;
   justify-content: center;
-  align-items:flex-end;
+  align-items: flex-end;
   gap: 5px;
   margin-bottom: 10px;
   text-decoration: none;
   color: #000;
+  font-size: 1.1rem;
+}
+
+main > section#contato > div#sociais > a:hover {
+  color: #00f;
+  cursor: pointer;
 }
 
 main > section#contato > div#sociais > a > img {
-  width: 24px;
+  width: 22px;
 }
 
 /* section localizacao */
@@ -285,13 +306,20 @@ main > section#localizacao > address {
   margin-bottom: 10px;
 }
 
-main > section#localizacao > address > p{
- padding: 5px;
+main > section#localizacao > address > p {
+  padding: 5px;
+}
+
+main > section#localizacao > #mapa {
+  width: 95%;
+  height: 300px;
+  margin: auto;
 }
 
 main > section#localizacao > #mapa > iframe {
   width: 100%;
-  height: 40vh;
+  height: 100%;
+  border: none;
 }
 
 /* section pagamento */
@@ -309,67 +337,59 @@ main > section#pagamento > div#cartoes {
 }
 
 main > section#pagamento > div#cartoes > img {
-  width: 36px;
+  width: 40px;
 }
 
 /* footer */
 footer {
-  background-color: rgba(0, 0, 0, 0.811);
-  color: rgb(214, 198, 198);
-  text-align: center;
-  padding-bottom: 10px;
-} 
+  background-color: #000;
+  color: #ffffffc4;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer #dev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 footer #dev #autor {
-  font-style: bold;
-  font-size: 1.1rem;
-  font-family: cursive;
   font-weight: bolder;
   text-shadow: 2px 2px 2px rgba(108, 108, 156, 0.363);
-  color: #61618e;
-  
+  color: #7f7fa7;
 }
 
 footer #dev img {
-  height: 18px;
-  margin-left: 15px;
-  border-radius: 2px;
-}
-
-footer #dev{
-  width: 100%;
-  color: #d1cfcf;
-  padding: 5px;
-  font-size: 1rem;
-  line-height: 12px;
-  vertical-align: bottom;
+  width: 18px;
+  margin-right: 10px;
 }
 
 footer #dev a {
   text-decoration: none;
-  color: #6b6464b0;
-  vertical-align: bottom;
 }
 
 footer #dev p {
-  padding: 10px;
+  margin-right: 10px;
 }
 
 footer #dev img:hover {
   box-shadow: 2px 2px 5px rgba(246, 255, 0, 0.538);
   transform: translate(0px, -5px);
-  transition: .2s;
+  transition: 0.2s;
 }
 
 footer > div#copy {
-  margin-top: 10px;
+  text-align: center;
 }
 
 /* ícone do whatsapp fixado na página */
 footer > #whats {
-  position:fixed;
-  bottom:10px;
-  right:10px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 
 footer > #whats > img {
