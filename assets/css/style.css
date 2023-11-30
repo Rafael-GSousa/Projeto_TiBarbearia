@@ -139,7 +139,7 @@ main > section#servicos > div#servicos-container {
 
 main > section#servicos > div#servicos-container > article {
   background-color: #8c8c8c32;
-  width: 90%;
+  width: 70%;
   margin: 0 auto 2rem;
   padding-bottom: 5px;
   border-radius: 10px;
@@ -236,7 +236,7 @@ main > section#contato {
   background-color: #fff;
 }
 
-div#agendamento {
+main > section#contato > div#agendamento {
   margin: auto;
 }
 
@@ -334,6 +334,9 @@ main > section#pagamento > h2 {
 main > section#pagamento > div#cartoes {
   display: flex;
   justify-content: space-evenly;
+  width: 40%;
+  margin: auto;
+  gap: 20px
 }
 
 main > section#pagamento > div#cartoes > img {
